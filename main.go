@@ -1,6 +1,9 @@
 package main
 
-import "github.com/Bevs-n-Devs/trusthouse/logs"
+import (
+	"github.com/Bevs-n-Devs/trusthouse/handler"
+	"github.com/Bevs-n-Devs/trusthouse/logs"
+)
 
 const (
 	logInfo  = 1
@@ -11,7 +14,7 @@ func main() {
 	go logs.LogProcessor()
 	logs.Logs(logInfo, "Starting Trust House application...")
 
-	logs.Logs(logDbErr, "hello world, hello Yaw!")
+	go handler.StartServer()
 
-	// select {} // Keep the main function running to allow log processing
+	select {} // Keep the main function running to allow log processing
 }
