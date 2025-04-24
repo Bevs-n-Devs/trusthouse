@@ -229,110 +229,6 @@
         <div class="container">
             <div class="row">
                 
-                <div class="col-md-8">
-                    <ul id="skill-section" class="clearfix skill-graph waves-effect">
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="90%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">90%</span>
-                                    </div>
-                                    <span class="skill-title">January Feabruary</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="100%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">100%</span>
-                                    </div>
-                                    <span class="skill-title">March April</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="80%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">80%</span>
-                                    </div>
-                                    <span class="skill-title">May & June</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="60%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">60%</span>
-                                    </div>
-                                    <span class="skill-title">July August</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="85%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">85%</span>
-                                    </div>
-                                    <span class="skill-title">September October</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="80%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">80%</span>
-                                    </div>
-                                    <span class="skill-title">November December</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                        <!-- single skill -->
-                        <li>
-                            <div class="after-li">
-                                <div class="singel-hr">
-                                    <div class="singel-hr-inner waves-effect" data-height="90%"></div>
-                                    <div class="skill-visiable">
-                                        <span class="skill-count">90%</span>
-                                    </div>
-                                    <span class="skill-title">See Full Year</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- /single skill-->
-
-                    </ul>
-                </div>
-                
                 <div class="col-md-4">
                     <div class="custom-accordion waves-effect">
                         <!-- Start Accordion Section -->
@@ -896,32 +792,63 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" method="post" action="">
                         <div class="row">
                             <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <label for="propertyNumber">Door/Property Number</label>
+                                    <input type="text" class="form-control" placeholder="Property door number..." id="name" required data-validation-required-message="Please the door number of property.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <label for="streetName">Street</label>
+                                    <input type="text" class="form-control" placeholder="Street name..." id="email" required data-validation-required-message="Please enter the street name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <label for="townOrCity">Residence</label>
+                                    <input type="text" class="form-control" placeholder="Town or city..." id="email" required data-validation-required-message="Please enter the town or city.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="form-group waves-effect">
+                                    <label for="postcode">Postcode</label>
+                                    <input type="text" class="form-control" placeholder="Postcode..." id="email" required data-validation-required-message="Please enter the postcode.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="streetName">Property Rating</label>
+                                    <select name="propertyRating" id="propertyRating" class="form-control" required data-validation-required-message="Please select property rating.">
+                                        <option value="" disabled selected>Select property rating</option>
+                                        <option value="1">1 - 😐 Very Bad</option>
+                                        <option value="2">2 - 😐 Poor</option>
+                                        <option value="3">3 - 🙂 Average</option>
+                                        <option value="4">4 - 🙂 Good</option>
+                                        <option value="5">5 - 😎 Excellent</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                
                             </div>
                             <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <label for="propertyReview">Review</label>
+                                    <textarea class="form-control" placeholder="Your review..." id="message" required data-validation-required-message="Please enter your review."></textarea>
                                     <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="reviewedBy">Reviewed By</label>
+                                    <select name="reviewedBy" id="reviewedBy" class="form-control" required data-validation-required-message="Please select your status.">
+                                        <option value="" disabled selected>Select your status</option>
+                                        <option value="Tenant">Tenant</option>
+                                        <option value="Neighbour">Neighbour</option>
+                                        <option value="Visitor">Visitor</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-primary waves-effect">Send Message</button>
+                                <button type="submit" class="btn btn-primary waves-effect">Submit Review</button>
                             </div>
                         </div>
                     </form>
