@@ -795,32 +795,32 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" method="post" action="">
+                    <form name="sentMessage" id="contactForm" method="post" action="/create-review">
                         <div class="row">
                             <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
                                     <label for="propertyNumber">Door/Property Number</label>
-                                    <input type="text" class="form-control" placeholder="Property door number..." id="name" required data-validation-required-message="Please the door number of property.">
+                                    <input type="text" class="form-control" placeholder="Property door number..." id="propertyNumber" name="propertyNumber" required data-validation-required-message="Please the door number of property.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
                                     <label for="streetName">Street</label>
-                                    <input type="text" class="form-control" placeholder="Street name..." id="email" required data-validation-required-message="Please enter the street name.">
+                                    <input type="text" class="form-control" placeholder="Street name..." id="streetName" name="streetName" required data-validation-required-message="Please enter the street name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
                                     <label for="townOrCity">Residence</label>
-                                    <input type="text" class="form-control" placeholder="Town or city..." id="email" required data-validation-required-message="Please enter the town or city.">
+                                    <input type="text" class="form-control" placeholder="Town or city..." id="townOrCity" name="townOrCity" required data-validation-required-message="Please enter the town or city.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
                                     <label for="postcode">Postcode</label>
-                                    <input type="text" class="form-control" placeholder="Postcode..." id="email" required data-validation-required-message="Please enter the postcode.">
+                                    <input type="text" class="form-control" placeholder="Postcode..." id="postcode" name="postcode" required data-validation-required-message="Please enter the postcode.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="streetName">Property Rating</label>
-                                    <select name="propertyRating" id="propertyRating" class="form-control" required data-validation-required-message="Please select property rating.">
+                                    <label for="propertyRating">Property Rating</label>
+                                    <select name="propertyRating" id="propertyRating" name="propertyRating" class="form-control" required data-validation-required-message="Please select property rating.">
                                         <option value="" disabled selected>Select property rating</option>
                                         <option value="1">1 - 😐 Very Bad</option>
                                         <option value="2">2 - 😐 Poor</option>
@@ -835,12 +835,12 @@
                             <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
                                     <label for="propertyReview">Review</label>
-                                    <textarea class="form-control" placeholder="Your review..." id="message" required data-validation-required-message="Please enter your review."></textarea>
+                                    <textarea class="form-control" placeholder="Your review..." id="propertyReview" name="propertyReview" required data-validation-required-message="Please enter your review."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
                                     <label for="reviewedBy">Reviewed By</label>
-                                    <select name="reviewedBy" id="reviewedBy" class="form-control" required data-validation-required-message="Please select your status.">
+                                    <select name="reviewedBy" id="reviewedBy" name="reviewedBy" class="form-control" required data-validation-required-message="Please select your status.">
                                         <option value="" disabled selected>Select your status</option>
                                         <option value="Tenant">Tenant</option>
                                         <option value="Neighbour">Neighbour</option>
