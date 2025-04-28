@@ -11,6 +11,9 @@
 
     <title>Making Your Voice Heard In Your Community | Trust House</title>
 
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css">
     
@@ -56,14 +59,28 @@
     <div class="menu-wrap">
 		<nav class="menu">
 			<div class="icon-list">
-				<a href="#home" class="logo page-scroll waves-effect" style="color: #C8D4D3;">TrustHouse</a>
-				<a href="#about-us" class="page-scroll waves-effect"><i class="fa fa-fw fa-user"></i><span>About Us</span></a>
-				<a href="#portfolio" class="page-scroll waves-effect"><i class="fa fa-fw fa-bell-o"></i><span>Portfolio</span></a>
-				<a href="#service" class="page-scroll waves-effect"><i class="fa fa-fw fa-bar-chart-o"></i><span>Services</span></a>
-				<a href="#team" class="page-scroll waves-effect"><i class="fa fa-fw fa-users"></i><span>Our Team</span></a>
-				<a href="#latest-news" class="page-scroll waves-effect"><i class="fa fa-fw fa-mortar-board"></i><span>Latest News</span></a>
-				<a href="#client" class="page-scroll waves-effect"><i class="fa fa-fw fa-comment-o"></i><span>Testimonial</span></a>
-				<a href="#contact" class="page-scroll waves-effect"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+				<a href="#home" class="logo page-scroll waves-effect" style="color: #2CA695;">TrustHouse</a>
+				<a href="#about-us" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-user" style="color: #2CA695;"></i><span>About Us</span>
+                </a>
+				<a href="#portfolio" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-bell-o" style="color: #2CA695;"></i><span>Portfolio</span>
+                </a>
+				<a href="#service" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-bar-chart-o" style="color: #2CA695;"></i><span>Services</span>
+                </a>
+				<a href="#team" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-users" style="color: #2CA695;"></i><span>Our Team</span>
+                </a>
+				<a href="#latest-news" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-mortar-board" style="color: #2CA695;"></i><span>Latest News</span>
+                </a>
+				<a href="#client" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-comment-o" style="color: #2CA695;"></i><span>Testimonial</span>
+                </a>
+				<a href="#contact" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-envelope-o" style="color: #2CA695;"></i><span>Contact</span>
+                </a>
 			</div>
 		</nav>
 		<button class="close-button" id="close-button">Close Menu</button>
@@ -225,7 +242,7 @@
     
     
     <!-- Start About Us Section 2 -->
-    <div class="about-us-section-2">
+    <div class="about-us-section-2" style="background-color: #2CA695;">
         <div class="container">
             <div class="row">
                 
@@ -311,7 +328,7 @@
     
     
     <!-- Start Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+    <!-- <section id="portfolio" class="portfolio-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -324,7 +341,6 @@
             <div class="row">
                 <div class="col-md-12">
                     
-                    <!-- Start Portfolio items -->
                     <ul id="portfolio-list">
                         <li>
                             <div class="portfolio-item">
@@ -386,18 +402,15 @@
                                 </div>
                             </div>
                         </li>
-                        
-                            
                     </ul>
-                    <!-- End Portfolio items -->
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Portfolio Section -->
     
     <!-- Start Portfolio Modal Section -->
-    <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -422,16 +435,16 @@
                         <img src="/static/images/portfolio/port-2.jpg" class="img-responsive" alt="..">
                     </div>
                     
-                </div><!-- /.row -->
+                </div>
             </div>                
         </div>
-    </div>
+    </div> -->
     <!-- End Portfolio Modal Section -->
     
     
     
     <!-- Start Service Section -->
-    <section id="service" class="services-section">
+    <!-- <section id="service" class="services-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -451,7 +464,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-gift"></i>
@@ -461,7 +474,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-wordpress"></i>
@@ -471,7 +484,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-plug"></i>
@@ -481,7 +494,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-joomla"></i>
@@ -491,7 +504,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-cube"></i>
@@ -501,7 +514,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-css3"></i>
@@ -511,7 +524,7 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service waves-effect">
                         <i class="fa fa-umbrella"></i>
@@ -521,16 +534,16 @@
                             <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
                         </div>
                     </div>
-                </div><!-- /.col-md-3 -->
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Service Section -->
     
     
     
     <!-- Start Fun Facts Section -->
-    <section class="fun-facts">
+    <!-- <section class="fun-facts">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
@@ -563,13 +576,13 @@
                     </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Fun Facts Section -->
     
     
     
     <!-- Start Team Member Section -->
-    <section id="team" class="team-member-section">
+    <!-- <section id="team" class="team-member-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -652,13 +665,13 @@
             </div>
                 
         </div>
-    </section>
+    </section> -->
     <!-- End Team Member Section -->
     
     
     
     <!-- Start Call to Action Section -->
-    <section class="call-to-action">
+    <!-- <section class="call-to-action">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -667,13 +680,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Call to Action Section -->
     
     
     
     <!-- Start Latest News Section -->
-    <section id="latest-news" class="latest-news-section">
+    <!-- <section id="latest-news" class="latest-news-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -716,13 +729,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Latest News Section -->
     
     
     
     <!-- Start Client Section -->
-    <section id="client" class="client-section">
+    <!-- <section id="client" class="client-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -774,9 +787,9 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
+            </div>
+        </div>
+    </section> -->
     <!-- End Client Section -->
     
     
@@ -788,8 +801,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
-                        <h2>Contact With Us</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                        <h2 style="color: #2CA695;">New Review</h2>
+                        <p>Create Your Review</p>
                     </div>
                 </div>
             </div>
@@ -799,27 +812,27 @@
                         <div class="row">
                             <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
-                                    <label for="propertyNumber">Door/Property Number</label>
+                                    <label for="propertyNumber" style="color: #2CA695;">Door/Property Number</label>
                                     <input type="text" class="form-control" placeholder="Property door number..." id="propertyNumber" name="propertyNumber" required data-validation-required-message="Please the door number of property.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="streetName">Street</label>
+                                    <label for="streetName" style="color: #2CA695;">Street</label>
                                     <input type="text" class="form-control" placeholder="Street name..." id="streetName" name="streetName" required data-validation-required-message="Please enter the street name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="townOrCity">Residence</label>
+                                    <label for="townOrCity" style="color: #2CA695;">Residence</label>
                                     <input type="text" class="form-control" placeholder="Town or city..." id="townOrCity" name="townOrCity" required data-validation-required-message="Please enter the town or city.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="postcode">Postcode</label>
+                                    <label for="postcode" style="color: #2CA695;">Postcode</label>
                                     <input type="text" class="form-control" placeholder="Postcode..." id="postcode" name="postcode" required data-validation-required-message="Please enter the postcode.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="propertyRating">Property Rating</label>
+                                    <label for="propertyRating" style="color: #2CA695;">Property Rating</label>
                                     <select name="propertyRating" id="propertyRating" name="propertyRating" class="form-control" required data-validation-required-message="Please select property rating.">
                                         <option value="" disabled selected>Select property rating</option>
                                         <option value="1">1 - 😐 Very Bad</option>
@@ -834,12 +847,12 @@
                             </div>
                             <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="form-group waves-effect">
-                                    <label for="propertyReview">Review</label>
+                                    <label for="propertyReview" style="color: #2CA695;">Review</label>
                                     <textarea class="form-control" placeholder="Your review..." id="propertyReview" name="propertyReview" required data-validation-required-message="Please enter your review."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group waves-effect">
-                                    <label for="reviewedBy">Reviewed By</label>
+                                    <label for="reviewedBy" style="color: #2CA695;">Reviewed By</label>
                                     <select name="reviewedBy" id="reviewedBy" name="reviewedBy" class="form-control" required data-validation-required-message="Please select your status.">
                                         <option value="" disabled selected>Select your status</option>
                                         <option value="Tenant">Tenant</option>
@@ -851,7 +864,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-primary waves-effect">Submit Review</button>
+                                <button type="submit" class="btn btn-primary waves-effect" style="background-color: #2CA695;">Submit Review</button>
                             </div>
                         </div>
                     </form>
@@ -866,7 +879,7 @@
     
     <!-- Start Map Section -->
     <div class="google-map">
-        <div id="map"></div>
+        <div id="map" style="width: 600px; height: 400px;"></div>
         <div class="contact-info waves-effect">
             <h4>Contact info</h4>
             <ul>
@@ -886,7 +899,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-xs-12">
-                    <span class="copyright"> &copy; Navigator 2015. Designed by <a href="http://themefisher.com">Themefisher</a></span>
+                    <span class="copyright">TrustHouse 2025&copy;. Powered by <a href="http://akototech.org">Akoto Tech</a></span>
                 </div>
                 <div class="col-md-4 col-xs-12">
                     <div class="footer-social text-center">
@@ -944,6 +957,10 @@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="/static/js/google-map-init.js"></script>
+
+    <!-- Leaflet Map -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
 
     <!-- Custom JavaScript -->
     <script src="/static/js/script.js"></script>

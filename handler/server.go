@@ -19,6 +19,7 @@ func StartServer() {
 
 	// define routes
 	http.HandleFunc("/", Home)
+	http.HandleFunc("/create-review", CreateReview)
 
 	// initialise port for application
 	httpPort := os.Getenv("PORT")
