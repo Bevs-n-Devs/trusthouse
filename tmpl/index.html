@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Making Your Voice Heard In Your Community | Trust House</title>
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+    
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
+    
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" type="text/css" href="/static/css/owl.carousel.css" >
+    <link rel="stylesheet" type="text/css" href="/static/css/owl.theme.css" >
+    <link rel="stylesheet" type="text/css" href="/static/css/owl.transitions.css" >
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/material.css">
+    
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
+    
+    
+
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/color/blue.css" title="blue">
+    
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Modernizer js -->
+    <script src="/static/js/modernizr.custom.js"></script>
+
+</head>
+
+<body class="index">
+    
+    <!-- Start Off=Canvas Navigation Section -->
+    <div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="#home" class="logo page-scroll waves-effect" style="color: #2CA695;">TrustHouse</a>
+				<a href="#about-us" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-user" style="color: #2CA695;"></i><span>About Us</span>
+                </a>
+				<a href="#instructions" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-info-circle" style="color: #2CA695;"></i><span>Instructions</span>
+                </a>
+				<!-- <a href="#service" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-bar-chart-o" style="color: #2CA695;"></i><span>Services</span>
+                </a> -->
+				<!-- <a href="#team" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-users" style="color: #2CA695;"></i><span>Our Team</span>
+                </a>
+				<a href="#latest-news" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-mortar-board" style="color: #2CA695;"></i><span>Latest News</span>
+                </a>
+				<a href="#client" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-comment-o" style="color: #2CA695;"></i><span>Testimonial</span>
+                </a> -->
+				<a href="#newReview" class="page-scroll waves-effect" style="color: #C8D4D3;">
+                    <i class="fa fa-fw fa-edit" style="color: #2CA695;"></i><span>New Review</span>
+                </a>
+			</div>
+		</nav>
+		<button class="close-button" id="close-button">Close Menu</button>
+	</div>
+	<button class="menu-button waves-effect" id="open-button">Open Menu</button>
+    <!-- End Off-Canvas Navigation Section -->
+    
+    
+    <!-- ***************************************************************** -->
+    <!-- Start Header Section -->
+    <!-- ***************************************************************** -->
+    <section class="header" id="home">
+        <div class="container">
+            <div class="intro-text">
+                <h1 style="color: #ADC0BB;">Welcome To <!-- <span style="color: #2CA695;">Trust House</span> --></h1>
+                <!-- <br><br><br><br> -->
+                <!-- <p style="color: 2CA695;">Making Your Voice Heard In Your Community</p> -->
+                <!-- <a href="#feature" class="page-scroll waves-effect btn btn-primary">Read More</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- End Header Section -->
+    
+    
+    
+    
+    <!-- Start About Us Section -->
+    <section id="about-us" class="about-us-section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title text-center">
+                            <h2 style="color: #2CA695;">About Us</h2>
+                            <p>
+                                This website is designed to allow anyone to rate the condtion of a property - no matter if you're a tenant, neighbour or just passing by.<br>
+                                As a tenant you can review the condition of the property you're renting, or even your tenants.<br>
+                                Neighbours can review the property also, along with anyone passing by - it doesn't have to be all negative!<br>
+                                <br>
+                                Each review will have a rating from 1 <i>(a very bad review)</i>, to 5 <i>(an excellent review)</i>.
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/broken_appliances.jpg" class="img-responsive" alt="..">
+                        <h4>Broken Appliances</h4>
+                        <div class="border"></div>
+                        <p>
+                            Broken appliances within the property making it difficult to live in - broken fridge, boiler, cooker etc
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/arguing.jpg" class="img-responsive" alt="..">
+                        <h4>Domestic Disturbances</h4>
+                        <div class="border"></div>
+                        <p>
+                            Neighbours arguing or being disruptive.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/broken_sofa.jpg" class="img-responsive" alt="..">
+                        <h4>Broken Furniture</h4>
+                        <div class="border"></div>
+                        <p>
+                            Furniture broken before or during moving into property.
+                        </p>
+                    </div>
+                </div>
+                
+            </div><!-- /.row -->   
+            
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/drug_misuse.jpg" class="img-responsive" alt="..">
+                        <h4>Drug Misuse</h4>
+                        <div class="border"></div>
+                        <p>
+                            Drugs are used in or around the property.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/houseParty.jpg" class="img-responsive" alt="..">
+                        <h4>Parties & Large Gatherings</h4>
+                        <div class="border"></div>
+                        <p>
+                            Parties and gatherings causing a disturbance.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/rude.png" class="img-responsive" alt="..">
+                        <h4>Rudeness</h4>
+                        <div class="border"></div>
+                        <p>
+                            Rudeness or harrasment from people within the property.
+                        </p>
+                    </div>
+                </div>
+                
+            </div><!-- /.row -->  
+
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/messy_roommate.jpg" class="img-responsive" alt="..">
+                        <h4>Messy Housemates / Flatmates</h4>
+                        <div class="border"></div>
+                        <p>
+                            Unkepmt house mates making it difficult to live with them..
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/trusthouse.jpg" class="img-responsive" alt="..">
+                        <h4>Difficult Landlords</h4>
+                        <div class="border"></div>
+                        <p>
+                            Landlords being diificult, causing harrasment, increasing rent without formal notice.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="welcome-section text-center waves-effect">
+                        <img src="/static/images/TrustHouse/rubbish_house.jpg" class="img-responsive" alt="..">
+                        <h4>Dirty / Unkempt</h4>
+                        <div class="border"></div>
+                        <p>
+                            Piles of rubbish & litter left laying around the property.
+                        </p>
+                    </div>
+                </div>
+                
+            </div><!-- /.row --> 
+            
+        </div><!-- /.container -->
+    </section>
+    <!-- End About Us Section -->
+    
+    
+    
+    <!-- Start About Us Section 2 -->
+    <div id="instructions" class="about-us-section-2" style="background-color: #2CA695;">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="custom-accordion waves-effect">
+                        <!-- Start Accordion Section -->
+                         <p>
+                            Creating a review can be done in <strong>4 easy steps!</strong>
+                         </p>
+                    <div class="panel-group" id="accordion">
+
+                        <!-- Start Accordion 1 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading waves-effect">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
+                                    <i class="fa fa-angle-left control-icon"></i> Step 1
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">Enter the address which you wish to write your review for.</div>
+                        </div>
+                    </div>
+                    <!-- End Accordion 1 -->
+
+                    <!-- Start Accordion 2 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading waves-effect">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed">
+                                    <i class="fa fa-angle-left control-icon"></i> Step 2
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">Give the property a rating out of 5 (1 being bad and 5 being good).</div>
+                        </div>
+                    </div>
+                    <!-- End Accordion 2 -->
+
+                    <!-- Start Accordion 3 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading waves-effect">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" class="collapsed">
+                                    <i class="fa fa-angle-left control-icon"></i> Step 3
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">Write your review which can be positive or negative depending on experience.</div>
+                        </div>
+                    </div>
+                    <!-- End Accordion 3 -->
+
+                    <!-- Start Accordion 4 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading waves-effect">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" class="collapsed">
+                                    <i class="fa fa-angle-left control-icon"></i> Step 4
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-4" class="panel-collapse collapse">
+                            <div class="panel-body">Upload your review to our map which can be viewed by the public.</div>
+                        </div>
+                    </div>
+                    <!-- End Accordion 4 -->
+
+                    </div>
+                    <!-- End Accordion section -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Start About Us Section 2 -->
+    
+    
+    
+    
+    <!-- Start Portfolio Section -->
+    <!-- <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>Our Portfolio</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <ul id="portfolio-list">
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-5.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-2.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-3.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-4.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-6.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="/static/images/portfolio/port-1.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Portfolio Title</h4>
+                                    <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                    <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+    
+    <!-- Start Portfolio Modal Section -->
+    <!-- <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h2>Portfolio Details</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <img src="/static/images/portfolio/port-1.jpg" class="img-responsive" alt="..">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/static/images/portfolio/port-2.jpg" class="img-responsive" alt="..">
+                    </div>
+                    
+                </div>
+            </div>                
+        </div>
+    </div> -->
+    <!-- End Portfolio Modal Section -->
+    
+    
+    
+    <!-- Start Service Section -->
+    <!-- <section id="service" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>Our Services</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-magic"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>Web Design</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-gift"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>Graphics Design</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-wordpress"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>WordPress Theme</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-plug"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>WordPress Plugin</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-joomla"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>Joomla Template</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-cube"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>Joomla Extension</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-css3"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>Bootstrap Template</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service waves-effect">
+                        <i class="fa fa-umbrella"></i>
+                        <div class="border"></div>
+                        <div class="service-content">
+                            <h4>24/7 Support</h4>
+                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Service Section -->
+    
+    
+    
+    <!-- Start Fun Facts Section -->
+    <!-- <section class="fun-facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="counter-item waves-effect">
+                        <i class="fa fa-cloud-upload"></i>
+                        <div class="timer" id="item1" data-to="991" data-speed="5000"></div>
+                        <h5>Files uploaded</h5>                               
+                      </div>
+                    </div>  
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="counter-item waves-effect">
+                        <i class="fa fa-check"></i>
+                        <div class="timer" id="item2" data-to="7394" data-speed="5000"></div>
+                        <h5>Projects completed</h5>                               
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="counter-item waves-effect">
+                        <i class="fa fa-code"></i>
+                        <div class="timer" id="item3" data-to="18745" data-speed="5000"></div>
+                        <h5>Lines of code written</h5>                               
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="counter-item waves-effect">
+                        <i class="fa fa-male"></i>
+                        <div class="timer" id="item4" data-to="8423" data-speed="5000"></div>
+                        <h5>Happy clients</h5>                               
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Fun Facts Section -->
+    
+    
+    
+    <!-- Start Team Member Section -->
+    <!-- <section id="team" class="team-member-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title text-center">
+                            <h2>Our Team</h2>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/team/face_1.png" class="img-responsive" alt="">
+                        <div class="team-details">
+                            <h4>John Doe</h4>
+                            <div class="designation">Founder & Director</div>
+                            <p class="description">Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/team/face_2.png" class="img-responsive" alt="">
+                        <div class="team-details">
+                            <h4>John Doe</h4>
+                            <div class="designation">Founder & Director</div>
+                            <p class="description">Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/team/face_3.png" class="img-responsive" alt="">
+                        <div class="team-details">
+                            <h4>John Doe</h4>
+                            <div class="designation">Founder & Director</div>
+                            <p class="description">Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/team/face_4.png" class="img-responsive" alt="">
+                        <div class="team-details">
+                            <h4>John Doe</h4>
+                            <div class="designation">Founder & Director</div>
+                            <p class="description">Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section> -->
+    <!-- End Team Member Section -->
+    
+    
+    
+    <!-- Start Call to Action Section -->
+    <!-- <section class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Awesome <strong>Navigator</strong> Template is ready for <br> Business, Agency, Landing or Creative Portfolio</h1>
+                    <button type="submit" class="btn btn-primary waves-effect">Buy This Template</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Call to Action Section -->
+    
+    
+    
+    <!-- Start Latest News Section -->
+    <!-- <section id="latest-news" class="latest-news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>Latest News</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest-news">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="latest-post waves-effect">
+                            <img src="/static/images/post-1.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="latest-post waves-effect">
+                            <img src="/static/images/post-2.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="latest-post waves-effect">
+                            <img src="/static/images/post-3.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Latest News Section -->
+    
+    
+    
+    <!-- Start Client Section -->
+    <!-- <section id="client" class="client-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                        <h2>Our Clients</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                 
+                <div class="col-md-12">
+                    <div class="testimonial-section">
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_1.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_2.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_3.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_4.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_5.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                            <div class="testimonial-people pull-right">
+                                <img src="/static/images/clients/client_6.png" class="img-responsive" alt="Testimonial People">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Client Section -->
+    
+    
+    
+    
+    <!-- Start Contact Us Section -->
+    <section id="newReview" class="contact contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                        <h2 style="color: #2CA695;">New Review</h2>
+                        <p>Create Your Review</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" method="post" action="/create-review">
+                        <div class="row">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
+                                <div class="form-group waves-effect">
+                                    <label for="propertyNumber" style="color: #2CA695;">Door/Property Number</label>
+                                    <input type="text" class="form-control" placeholder="Property door number..." id="propertyNumber" name="propertyNumber" required data-validation-required-message="Please the door number of property.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="streetName" style="color: #2CA695;">Street</label>
+                                    <input type="text" class="form-control" placeholder="Street name..." id="streetName" name="streetName" required data-validation-required-message="Please enter the street name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="townOrCity" style="color: #2CA695;">Residence</label>
+                                    <input type="text" class="form-control" placeholder="Town or city..." id="townOrCity" name="townOrCity" required data-validation-required-message="Please enter the town or city.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="postcode" style="color: #2CA695;">Postcode</label>
+                                    <input type="text" class="form-control" placeholder="Postcode..." id="postcode" name="postcode" required data-validation-required-message="Please enter the postcode.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="propertyRating" style="color: #2CA695;">Property Rating</label>
+                                    <select name="propertyRating" id="propertyRating" name="propertyRating" class="form-control" required data-validation-required-message="Please select property rating.">
+                                        <option value="" disabled selected>Select property rating</option>
+                                        <option value="1">1 - 😐 Very Bad</option>
+                                        <option value="2">2 - 😐 Poor</option>
+                                        <option value="3">3 - 🙂 Average</option>
+                                        <option value="4">4 - 🙂 Good</option>
+                                        <option value="5">5 - 😎 Excellent</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="600ms">
+                                <div class="form-group waves-effect">
+                                    <label for="propertyReview" style="color: #2CA695;">Review</label>
+                                    <textarea class="form-control" placeholder="Your review..." id="propertyReview" name="propertyReview" required data-validation-required-message="Please enter your review."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group waves-effect">
+                                    <label for="reviewedBy" style="color: #2CA695;">Reviewed By</label>
+                                    <select name="reviewedBy" id="reviewedBy" name="reviewedBy" class="form-control" required data-validation-required-message="Please select your status.">
+                                        <option value="" disabled selected>Select your status</option>
+                                        <option value="Tenant">Tenant</option>
+                                        <option value="Neighbour">Neighbour</option>
+                                        <option value="Visitor">Visitor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary waves-effect" style="background-color: #2CA695;">Submit Review</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    
+    
+    <!-- Start Map Section -->
+    <div class="google-map">
+        <div id="map" style="width: 600px; height: 400px;"></div>
+        <div class="contact-info waves-effect">
+            <h4>Contact info</h4>
+            <ul>
+                <li><strong>E-mail :</strong> your-email@mail.com</li>
+                <li><strong>Phone :</strong> +8801-6778776</li>
+                <li><strong>Mobile :</strong> +8801-45565378</li>
+                <li><strong>Web :</strong> yourdomain.com</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Map Section -->
+    
+    
+    
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <span class="copyright">TrustHouse 2025&copy;. Powered by <a href="http://akototech.org">Akoto Tech</a></span>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-social text-center">
+                        <ul>
+                            <li class="waves-effect"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="waves-effect"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="waves-effect"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="waves-effect"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="waves-effect"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-link">
+                        <ul class="pull-right">
+                            <li><a href="#">getbootstrap</a>
+                            </li>
+                            <li><a href="#">FontAwesome</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+    
+    
+    
+    
+    
+    
+    <!-- jQuery Version 2.1.3 -->
+    <script src="/static/js/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/count-to.js"></script>
+    <script src="/static/js/jquery.appear.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.fitvids.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/contact_me.js"></script>
+
+    <!-- Materialize js -->
+    <script src="/static/js/material.js"></script>
+    <script src="/static/js/waypoints.min.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="/static/js/google-map-init.js"></script>
+
+    <!-- Leaflet Map -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+
+    <!-- Custom JavaScript -->
+    <script src="/static/js/script.js"></script>
+    
+    
+</body>
+</html>
